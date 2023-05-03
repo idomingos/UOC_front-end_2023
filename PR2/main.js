@@ -47,13 +47,12 @@ function validar(num){
 
 // Comprova si és un nombre primer.
 function primer(num){
-	var i = 2, flag = true;
-	// 
-	for(; i <= num - 1; i++){
-		// Si la resta d'una operació de divisió és 0, el nombre és divisible per ell mateix per 1 i per aquest nombre (i), i en conseqüència no és primer.
+    let flag = true;
+    for(let i = 2; i <= Math.round(num/2); i++){
+	// Si la resta d'una operació de divisió és 0, el nombre és divisible per ell mateix per 1 i per aquest nombre (i), i en conseqüència no és primer.
     	if (num % i == 0) {
-            flag = false;
-            break;
+		flag = false;
+            	break;
         }
     }
     return flag;
