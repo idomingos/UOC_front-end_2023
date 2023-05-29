@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pokedex</title>
+	<!-- Style -->
+	<link rel="stylesheet" type="text/css" href="./style.css">	
+	<!-- Scripts -->
+	<!--script type="module" src="./pokedex.js"></script-->
+	<script type="text/javascript" defer src="./main.js"></script>
+</head>
+<body>
+<h1>PR3 - Pokedex</h1>
+<header>
+	<div class="topnav">
+  		<input id="search" type="text" placeholder="Search..">
+	</div>
+</header>
+
+<main class="main">
+	<section id="pokemons"></section>
+	<section class="list">
+		<ul id="list" class="results"></ul>
+	</section>
+</main>
+<section id="pokedex"></section>
+</body>
+
+<!-- Templates -->
+
+<template id = "pokedexListTemplate">
+	<li id='' data-name="name" class="card">
+		<img class="image" src="img_avatar.png" alt="Avatar" style="width:100%">
+		<div class="container">
+			<h5 class="id">#000000</h5>
+			<h3 class="pokeName"><b>Pokemon name</b></h4>
+		</div>
+	</li>
+</template>
+
+<template id = "PokedexPokemon">
+	<article id="details-id" class="poke-details">
+		<div class="images">
+			<img class="poke-front" src="" alt="Imatge frontal">
+			<img class="poke-back" src="" alt="Imatge trasera">
+		</div>
+		<div class="description">
+			<h2 class="poke-name"></h2>
+			<p class="poke-descripttion"></p>
+			<ul>
+				<li class="poke-atac"></li>
+				<li class="poke-defensa"></li>
+			</ul>
+			<ul class="poke-type"></ul>
+		</div>
+	</article>
+</template>
+</html>
