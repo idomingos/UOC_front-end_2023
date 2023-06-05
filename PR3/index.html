@@ -6,15 +6,22 @@
 	<title>Pokedex</title>
 	<!-- Style -->
 	<link rel="stylesheet" type="text/css" href="./style.css">	
-	<!-- Scripts -->
-	<!--script type="module" src="./pokedex.js"></script-->
+	<!-- Script -->
 	<script type="text/javascript" defer src="./main.js"></script>
 </head>
-<body>
+<body id="body">
 <h1>PR3 - Pokedex</h1>
 <header>
+	<div class="controls">
+		<label for="radio_dark">Fosc</label>
+		<input type="radio" name="theme" id="radio_dark" value="dark">
+		<label for="radio_ligth">Clar</label>
+		<input type="radio" name="theme" id="radio_ligth" value="ligth">
+	</div>
 	<div class="topnav">
-  		<input id="search" type="text" placeholder="Search..">
+  		<p>
+  		Cerca: <input id="search" type="text" placeholder="Search..">
+		</p>
 	</div>
 </header>
 
@@ -24,7 +31,6 @@
 		<ul id="list" class="results"></ul>
 	</section>
 </main>
-<section id="pokedex"></section>
 </body>
 
 <!-- Templates -->
@@ -52,7 +58,9 @@
 				<li class="poke-atac"></li>
 				<li class="poke-defensa"></li>
 			</ul>
-			<ul class="poke-type"></ul>
+			<ul class="poke-type">
+				Tipus:
+			</ul>
 		</div>
 	</article>
 </template>
