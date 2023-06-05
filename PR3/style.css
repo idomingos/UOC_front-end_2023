@@ -3,7 +3,6 @@
     --text-color:   #222;
     --border-color: #333;
 }
-
 body.light{
     --bg-color:  #fff;
     --text-color:   #222;
@@ -14,7 +13,6 @@ body.dark{
     --text-color:   #fff;
     --border-color: #ffe;
 }
-
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -22,53 +20,47 @@ body{
     padding: 1em 0;
     display: table;
 }
-
 .list{
-	margin: auto;
+    margin: auto;
     padding: 1em 0;
     display: table;
 }
-
 .results{
     width: 85vw;
 }
-
 .list .card{
-    /*min-width: 199px;
-    max-width: 250px;*/
     width: 199px;
-	border: 1px solid var(--border-color);
-	opacity: 1;
+    border: 1px solid var(--border-color);
+    opacity: 1;
     display: block;
     float: left;
     margin: 1vh;
     padding-bottom: 1vh;
 }
 div{
-	margin: 0 1em;
+    margin: 0 1em;
 }
 h2:first-letter {
     text-transform: uppercase;
 }
 h3, h5{
-	margin: 0;
+    margin: 0;
 }
 h3:first-letter {
     text-transform: uppercase;
 }
 h5:before {
-  content:"#";
+    content:"#";
 }
 .main .hidden{
     display: none;
 }
 .poke-details li{
-display: inline-table;
+    display: inline-table;
 }
 .poke-type li{
- padding: 7px;
+     padding: 7px;
 }
-
 .small_text{
     font-size: 1em;
 }
