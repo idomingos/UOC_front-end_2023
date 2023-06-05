@@ -16,6 +16,7 @@ body.dark{
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
+    text-align: center;
     margin: auto;
     padding: 1em 0;
     display: table;
